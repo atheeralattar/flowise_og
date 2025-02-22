@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrecisionOil Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html { 
+            scroll-behavior: smooth;
+            height: 100%;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .hero-overlay {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+        }
+        .service-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-blue-900 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="logo.png" alt="Logo" class="mr-3 rounded-full">
+                <span class="text-2xl font-bold">PrecisionOil</span>
+            </div>
+            <div class="space-x-6">
+                <a href="#home" class="hover:text-blue-300 transition">Home</a>
+                <a href="#services" class="hover:text-blue-300 transition">Services</a>
+                <a href="#about" class="hover:text-blue-300 transition">About</a>
+                <a href="#team" class="hover:text-blue-300 transition">Team</a>
+                <a href="llm.html" class="hover:text-blue-300 transition">LLM</a>
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 pt-24 flex-grow">
+        <!-- Two Column Layout -->
+        <div class="flex flex-col md:flex-row gap-8 my-8">
+            <!-- PDF Section -->
+            <div class="w-full md:w-1/2 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold mb-4 text-blue-900">Original PDF</h2>
+                <div class="aspect-video">
+                    <embed src="Disclosure.pdf" type="application/pdf" width="100%" height="150%" class="rounded-lg">
+                </div>
+            </div>
+
+            <!-- Table Section -->
+            <div class="w-full md:w-1/2 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold mb-4 text-blue-900">Custom Parsed Data</h2>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white">
+                        <thead class="bg-blue-900 text-white">
+                            <tr>
+                                <th class="py-3 px-4 text-left">Category</th>
+                                <th class="py-3 px-4 text-left">Value</th>
+                                <th class="py-3 px-4 text-left">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4">Sample 1</td>
+                                <td class="py-3 px-4">$1,234</td>
+                                <td class="py-3 px-4"><span class="px-2 py-1 bg-green-100 text-green-800 rounded-full">Active</span></td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4">Sample 2</td>
+                                <td class="py-3 px-4">$2,345</td>
+                                <td class="py-3 px-4"><span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded-full">Pending</span></td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4">Sample 3</td>
+                                <td class="py-3 px-4">$3,456</td>
+                                <td class="py-3 px-4"><span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full">In Progress</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12 mt-auto">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 PrecisionOil Services. All Rights Reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-blue-300"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-blue-300"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-blue-300"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
